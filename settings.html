@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FocusFlow - Settings</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav class="top-nav">
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="tasks.html">Tasks</a>
+    <a href="reports.html">Reports</a>
+    <a href="settings.html">Settings</a>
+</nav>
+<div class="container">
+
+<h1>Settings</h1>
+<form id="settings-form">
+    <label>Work Duration (minutes)
+        <input type="number" id="work-duration" value="25">
+    </label>
+    <label>Break Duration (minutes)
+        <input type="number" id="break-duration" value="5">
+    </label>
+    <label>
+        <input type="checkbox" id="notifications-enabled" checked>
+        Enable notifications
+    </label>
+    <label>Language
+        <input type="text" id="language" value="en">
+    </label>
+    <button type="submit">Save Settings</button>
+</form>
+<div id="settings-message"></div>
+
+</div>
+<script src="js/api.js"></script>
+<script src="js/settings.js"></script>
+</body>
+</html>

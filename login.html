@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FocusFlow - Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav class="top-nav">
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="tasks.html">Tasks</a>
+    <a href="reports.html">Reports</a>
+    <a href="settings.html">Settings</a>
+</nav>
+<div class="container">
+
+<h1>Login</h1>
+<form id="login-form">
+    <label>Username or Email
+        <input type="text" id="login-identifier" required>
+    </label>
+    <label>Password
+        <input type="password" id="login-password" required>
+    </label>
+    <button type="submit">Login</button>
+</form>
+<div id="login-message"></div>
+
+</div>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
